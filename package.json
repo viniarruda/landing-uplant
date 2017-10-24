@@ -25,6 +25,7 @@
     "babel-loader": "^7.1.2",
     "babel-preset-react": "^6.24.1",
     "gulp-ruby-sass": "^2.1.1",
+    "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",
     "gulp-watch": "^4.3.11",
     "webpack": "^3.8.1"

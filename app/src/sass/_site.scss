@@ -1,0 +1,80 @@
+.uplant-background {
+  overflow: hidden;
+  position: relative;
+  background: url(../images/up-background.jpg) no-repeat;
+  height: 350px;
+  .header {
+    padding-top: 35px;
+    width: 100%;
+    height: 100px;
+    z-index: 999;
+    position: relative;
+    .navbar-brand {
+      float: left;
+      height: 50px;
+      padding: 15px 15px;
+      font-size: 18px;
+      line-height: 20px;
+      > img {
+        display: block;
+      }
+    }
+    .logo {
+      max-width: 100px;
+      padding-left: 0;
+    }
+    .header-right {
+      float: right;
+      display: block;
+      padding: 6px 20px;
+      li {
+        display: inline-block;
+        padding: 10px;
+        a {
+          color: $branco;
+          &:hover {
+            color: $secundaria;
+            text-decoration: none;
+            border-bottom: 1px solid $secundaria;
+          }
+        }
+      }
+    }
+  }
+  .up {
+    padding-bottom: 250px;
+    .titulo-header {
+      margin-top: 50px;
+      text-align: center;
+      color: $branco;
+      padding: 25px;
+      border: 4px solid $branco;
+      border-radius: 15px;
+      width: 200px;
+    }
+  }
+}
+#somos {
+  .equipe {
+    margin: 0 auto;
+    .card-equipe {
+      width: 200px;
+      display: inline-block;
+      margin: 5px;
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+      }
+      .card-legenda {
+        text-align: left;
+        margin-top: 5px;
+        ul {
+          li {
+            padding: 3px;
+          }
+        }
+      }
+    }
+  }
+}

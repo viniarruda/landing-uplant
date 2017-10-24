@@ -1,4 +1,5 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Container from './components/Container';
 
-ReactDOM.render(<h1>Teste</h1>, document.getElementById('app'));
+ReactDOM.render(<Container />, document.getElementById('app'));

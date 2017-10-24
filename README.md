@@ -28,7 +28,7 @@
 # Instalação
 
 1. npm init
-2. npm install --save react react-dom
+2. npm install --save react@next react-dom@next
 3. npm install --save-dev webpack
 4. npm install --save-dev babel-core babel-loader babel-preset-react
 5. npm install webpack -g
@@ -52,6 +52,8 @@ Deixar o node_modules e bower_components no .gitignore
 
 
 #Links úteis
+
+https://github.com/facebook/react
 
 https://medium.com/tableless/como-publiquei-uma-pwa-feita-com-ionic-na-amazon-ec2-3fda125115f9
 
