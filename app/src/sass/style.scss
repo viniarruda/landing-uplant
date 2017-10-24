@@ -1,0 +1,18 @@
+@import 'mixins/mixins';
+
+body {
+	font-family: 'Open Sans'!important;
+	line-height: 1;
+	position: relative;
+
+	ul {
+		list-style: none;
+	}
+
+	a {
+		&:hover,
+		&:focus {
+			text-decoration: none!important;
+		}
+	}
+}

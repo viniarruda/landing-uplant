@@ -37,7 +37,7 @@
 Gulp -> Sass
 
 1. npm install -g gulp
-2. npm install --save-dev gulp-ruby-sass
+2. npm install --save-dev gulp-ruby-sass ou npm install --save-dev gulp-sass
 3. gulp sass
 4. npm install gulp-watch --save-dev
 5. gulp watch
@@ -49,3 +49,10 @@ Gulp -> Sass
 
 #Obs:
 Deixar o node_modules e bower_components no .gitignore
+
+
+#Links úteis
+
+https://medium.com/tableless/como-publiquei-uma-pwa-feita-com-ionic-na-amazon-ec2-3fda125115f9
+
+http://jscasts.teachable.com/courses/enrolled/72597
