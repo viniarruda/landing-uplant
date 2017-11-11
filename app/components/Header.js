@@ -3,28 +3,31 @@ import React, { Component } from 'react';
 export default class Header extends Component {
   render() {
     return (
-      <div className="uplant-background">
-        <div className="header">
-          <div className="container container-header">
-            <div className="navbar-brand logo">
-              <img className="logo" src="../app/src/images/up-logo-header.png" />
-            </div>
-            <ul className="header-right">
-              <li className="btn-home" ><a href="#home">Home</a></li>
-              <li><a href="#sobre">Sobre</a></li>
-              <li><a href="#novidades">Fique por dentro</a></li>
-              <li><a href="#contato">Contato</a></li>
-            </ul>
-          </div>
-        </div>
-        <div className="container">
-          <div className="up row">
-            <div className="col-md-8 titulo-header">
-              <h1><strong>Uplant</strong> - Investimento agrícula crowndfounding</h1>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div className="navbar-default navbar-fixed-top" id="navigation">
+	        <div className="container">
+	            <div className="navbar-header">
+	                <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+	                    <span className="sr-only">Toggle navigation</span>
+	                    <span className="icon-bar"></span>
+	                    <span className="icon-bar"></span>
+	                    <span className="icon-bar"></span>
+	                </button>
+	                <a className="navbar-brand" href="#">
+                        <img className="logo-1" src="../app/src/images/up-logo-header.png" alt="LOGO"/>
+	                    <img className="logo-2" src="../app/src/images/up-logo-header.png" alt="LOGO"/>
+	                </a>
+	            </div>
+
+	            <nav className="collapse navbar-collapse" id="navbar">
+	                <ul className="nav navbar-nav navbar-right" id="top-nav">
+	                    <li className="current"><a href="#body">Home</a></li>
+	                    <li><a href="#about">Sobre</a></li>
+	                    <li><a href="#service">Plataforma</a></li>
+	                    <li><a href="#contact">Contato</a></li>
+	                </ul>
+	            </nav>
+	        </div>
+	    </div>
     );
   }
 }

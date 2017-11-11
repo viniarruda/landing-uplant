@@ -1,158 +1,35 @@
-.uplant-background {
-  overflow: hidden;
-  position: relative;
-  background: url(../images/up-background.jpg) no-repeat;
-  height: 350px;
-  .header {
-    padding-top: 8px;
-    width: 100%;
-    height: 100px;
-    z-index: 999;
-    position: fixed;
+#navbar {
+  .navbar-right {
+    display: inline-block;
+  }
+}
+
+#about {
+  .about-slider {
+    margin-top: 100px;
+  }
+  .team {
     display: block;
-    top: 0;
-    left: 0;
-    &.navigation-background {
-      background-color: rgba(255,255,255,0.92);
-      -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.13);
-      -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.13);
-      box-shadow: 0 1px 5px rgba(0,0,0,0.13);
-    }
-    .container-header {
-      border-bottom: 1px solid rgba(255,255,255,0.27);
-      height: 75px;
-    }
-    .navbar-brand {
-      float: left;
-      height: 50px;
-      padding: 15px 15px;
-      font-size: 18px;
-      line-height: 20px;
-      > img {
-        display: block;
-      }
-    }
-    .logo {
-      max-width: 100px;
-      padding-left: 0;
-    }
-    .header-right {
-      float: right;
-      display: block;
-      padding: 18px 20px;
-      &.btn-background {
-        li {
-          a {
-            color: $preto;
-          }
-        }
-      }
-      li {
-        display: inline-block;
-        padding: 10px;
-        a {
-          color: $branco;
-          &:hover {
-            color: $secundaria;
-            text-decoration: none;
-            border-bottom: 1px solid $secundaria;
-          }
-        }
-      }
-    }
-  }
-}
-.up {
-  padding: 150px 0 250px;
-  .titulo-header {
-    margin-top: 50px;
-    text-align: center;
-    color: $branco;
-    padding: 25px;
-    border: 4px solid $branco;
-    border-radius: 15px;
-    width: 200px;
-    margin: 0 auto;
-  }
-}
-#somos {
-  .equipe {
-    margin: 0 auto;
-    .card-equipe {
+    width: 100%;
+    margin-top: 30px;
+    .card-team {
       width: 200px;
       display: inline-block;
-      margin: 5px;
+      margin: 14px;
       img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 50%;
+        width: 100%;
+        border-radius: 100%;
       }
-      .card-legenda {
-        text-align: left;
+      .card-subtitle {
         margin-top: 5px;
-        ul {
-          li {
-            padding: 3px;
-          }
-        }
+        text-align: center;
       }
     }
   }
 }
-#sobre {
-  background-color: #c1ebf5;
-  padding-top: 40px;
-  .container-sobre {
-    .grid-sobre {
-      float: left;
-      display: inline-block;
-      &.right {
-        margin-top: 120px;
-      }
-      p {
-        text-align: justify;
-        line-height: 26px;
-        margin-bottom: 20px;
-        color: #4e4e4e;
-        font-weight: 300;
-        letter-spacing: 1px;
-      }
-    }
-  }
-}
-#blog {
-  .card-blog {
-    width: 350px;
-    height: 400px;
-    background-color: $branco;
-    display: inline-block;
-    margin: 10px;
-    border: 2px solid;
-    border-radius: 4px;
-    img {
-      width: 100%;
-      height: 250px;
-    }
-    .blog-legenda {
-      text-align: center;
-      .data {
-        display: block;
-      }
-      .titulo {
-        display: block;
-      }
-      .descricao {
-        display: block;
-      }
-    }
-  }
-}
-#contato {
-  form {
-    width: 500px;
-    margin: 0 auto;
-    label {
-      display: block;
-    }
+
+#service {
+  .heading {
+    width: 100%;
   }
 }

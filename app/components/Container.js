@@ -1,19 +1,23 @@
 import React, { Component } from 'react';
 import Header from './Header';
-import Somos from './Somos';
+import Date from './Date';
 import Sobre from './Sobre';
-import Blog from './Blog';
+import Plataforma from './Plataforma';
+import Newsletter from './Newsletter';
 import Contato from './Contato';
+import Footer from './Footer';
 
 export default class Container extends Component {
   render() {
     return (
       <div>
         <Header />
-        <Somos />
+        <Date />
         <Sobre />
-        <Blog />
+        <Plataforma />
+        <Newsletter />
         <Contato />
+        <Footer />
       </div>
     );
   }

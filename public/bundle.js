@@ -21554,10 +21554,14 @@ module.exports = function() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Header__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Somos__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Date__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Sobre__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Blog__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Contato__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Plataforma__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Newsletter__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Contato__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Footer__ = __webpack_require__(48);
+
+
 
 
 
@@ -21571,10 +21575,12 @@ class Container extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
       'div',
       null,
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Header__["a" /* default */], null),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Somos__["a" /* default */], null),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Date__["a" /* default */], null),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Sobre__["a" /* default */], null),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__Blog__["a" /* default */], null),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__Contato__["a" /* default */], null)
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__Plataforma__["a" /* default */], null),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__Newsletter__["a" /* default */], null),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__Contato__["a" /* default */], null),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__Footer__["a" /* default */], null)
     );
   }
 }
@@ -21591,239 +21597,88 @@ class Container extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 
 
 class Header extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
-  render() {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      "div",
-      { className: "uplant-background" },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        "div",
-        { className: "header" },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "div",
-          { className: "container container-header" },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "div",
-            { className: "navbar-brand logo" },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "logo", src: "../app/src/images/up-logo-header.png" })
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "ul",
-            { className: "header-right" },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "li",
-              { className: "btn-home" },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "a",
-                { href: "#home" },
-                "Home"
-              )
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "li",
-              null,
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "a",
-                { href: "#sobre" },
-                "Sobre"
-              )
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "li",
-              null,
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "a",
-                { href: "#novidades" },
-                "Fique por dentro"
-              )
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "li",
-              null,
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "a",
-                { href: "#contato" },
-                "Contato"
-              )
-            )
-          )
-        )
-      ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        "div",
-        { className: "container" },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "div",
-          { className: "up row" },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "div",
-            { className: "col-md-8 titulo-header" },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "h1",
-              null,
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "strong",
-                null,
-                "Uplant"
-              ),
-              " - Investimento agr\xEDcula crowndfounding"
-            )
-          )
-        )
-      )
-    );
-  }
+		render() {
+				return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+						"div",
+						{ className: "navbar-default navbar-fixed-top", id: "navigation" },
+						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+								"div",
+								{ className: "container" },
+								__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+										"div",
+										{ className: "navbar-header" },
+										__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+												"button",
+												{ type: "button", className: "navbar-toggle collapsed", "data-toggle": "collapse", "data-target": "#navbar" },
+												__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+														"span",
+														{ className: "sr-only" },
+														"Toggle navigation"
+												),
+												__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", { className: "icon-bar" }),
+												__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", { className: "icon-bar" }),
+												__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", { className: "icon-bar" })
+										),
+										__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+												"a",
+												{ className: "navbar-brand", href: "#" },
+												__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "logo-1", src: "../app/src/images/up-logo-header.png", alt: "LOGO" }),
+												__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "logo-2", src: "../app/src/images/up-logo-header.png", alt: "LOGO" })
+										)
+								),
+								__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+										"nav",
+										{ className: "collapse navbar-collapse", id: "navbar" },
+										__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+												"ul",
+												{ className: "nav navbar-nav navbar-right", id: "top-nav" },
+												__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+														"li",
+														{ className: "current" },
+														__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+																"a",
+																{ href: "#body" },
+																"Home"
+														)
+												),
+												__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+														"li",
+														null,
+														__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+																"a",
+																{ href: "#about" },
+																"Sobre"
+														)
+												),
+												__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+														"li",
+														null,
+														__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+																"a",
+																{ href: "#service" },
+																"Plataforma"
+														)
+												),
+												__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+														"li",
+														null,
+														__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+																"a",
+																{ href: "#contact" },
+																"Contato"
+														)
+												)
+										)
+								)
+						)
+				);
+		}
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = Header;
 
 
 /***/ }),
-/* 41 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-
-
-class Somos extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
-  render() {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      "section",
-      { id: "somos" },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        "div",
-        { className: "container" },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "div",
-          { className: "row" },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "div",
-            { className: "equipe" },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "div",
-              { className: "card-equipe" },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "../app/src/images/equipe/gabriel.jpg" }),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "div",
-                { className: "card-legenda" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  "ul",
-                  null,
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "li",
-                    null,
-                    "Gabriel Souza"
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "li",
-                    null,
-                    "Neg\xF3cios"
-                  )
-                )
-              )
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "div",
-              { className: "card-equipe" },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "../app/src/images/equipe/guilherme.jpg" }),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "div",
-                { className: "card-legenda" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  "ul",
-                  null,
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "li",
-                    null,
-                    "Guilherme Souza"
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "li",
-                    null,
-                    "Neg\xF3cios"
-                  )
-                )
-              )
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "div",
-              { className: "card-equipe" },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "../app/src/images/equipe/gustavo.jpg" }),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "div",
-                { className: "card-legenda" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  "ul",
-                  null,
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "li",
-                    null,
-                    "Gustavo Oshiro"
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "li",
-                    null,
-                    "Ux / Desenvolvedor"
-                  )
-                )
-              )
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "div",
-              { className: "card-equipe" },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "../app/src/images/equipe/leonardo.jpg" }),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "div",
-                { className: "card-legenda" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  "ul",
-                  null,
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "li",
-                    null,
-                    "Leonardo Ferreira"
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "li",
-                    null,
-                    "Trabalho de campo"
-                  )
-                )
-              )
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "div",
-              { className: "card-equipe" },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "../app/src/images/equipe/vinicius.jpg" }),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "div",
-                { className: "card-legenda" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  "ul",
-                  null,
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "li",
-                    null,
-                    "Vin\xEDcius Arruda"
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "li",
-                    null,
-                    "Desenvolvedor"
-                  )
-                )
-              )
-            )
-          )
-        )
-      )
-    );
-  }
-}
-/* harmony export (immutable) */ __webpack_exports__["a"] = Somos;
-
-
-/***/ }),
+/* 41 */,
 /* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -21840,7 +21695,7 @@ class Sobre extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'section',
-      { id: 'sobre' },
+      { id: 'about', className: 'section' },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         { className: 'container' },
@@ -21849,15 +21704,19 @@ class Sobre extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
           { className: 'row' },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
-            { className: 'col-md-12 container-sobre' },
+            { className: 'col-md-7 col-sm-12 wow fadeInLeft' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'div',
-              { className: 'grid-sobre col-md-6 left' },
+              { className: 'sub-heading' },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'h2',
+                'h3',
                 null,
-                'Nos conhe\xE7a'
-              ),
+                'Entenda um pouco mais sobre n\xF3s'
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'block' },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'p',
                 null,
@@ -21873,11 +21732,157 @@ class Sobre extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
                 null,
                 'N\xF3s do UPLANT acreditamos que nenhum portfolio de investimentos est\xE1 completo enquanto n\xE3o possuir uma parcela alocada no segmento agr\xEDcola, e temos orgulho em oferecer um forma simplificada e rent\xE1vel de investir neste mercado.'
               )
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'col-md-5 col-sm-12 wow fadeInLeft', 'data-wow-delay': '0.3s' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'about-slider' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'init-slider' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'div',
+                  { className: 'about-item' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '../app/src/images/1.jpg', alt: '', className: 'img-responsive' })
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'div',
+                  { className: 'about-item' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '../app/src/images/3.jpg', alt: '', className: 'img-responsive' })
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'div',
+                  { className: 'about-item' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '../app/src/images/5.jpg', alt: '', className: 'img-responsive' })
+                )
+              )
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'team' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'h1',
+              null,
+              'Nossa equipe'
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'div',
-              { className: 'grid-sobre col-md-6 right' },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('iframe', { id: 'frame', width: '500', height: '315', style: videoStyle, src: 'https://www.youtube.com/embed/oDkYTJ3cQjY' })
+              { className: 'card-team' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '../app/src/images/equipe/gabriel.jpg' }),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'card-subtitle' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'ul',
+                  null,
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    'Gabriel Souza'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    'Neg\xF3cios'
+                  )
+                )
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'card-team' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '../app/src/images/equipe/guilherme.jpg' }),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'card-subtitle' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'ul',
+                  null,
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    'Guilherme Souza'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    'Neg\xF3cios'
+                  )
+                )
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'card-team' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '../app/src/images/equipe/gustavo.jpg' }),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'card-subtitle' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'ul',
+                  null,
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    'Gustavo Oshiro'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    'Ux / Desenvolvedor'
+                  )
+                )
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'card-team' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '../app/src/images/equipe/leonardo.jpg' }),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'card-subtitle' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'ul',
+                  null,
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    'Leonardo Ferreira'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    'Trabalho de campo'
+                  )
+                )
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'card-team' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '../app/src/images/equipe/vinicius.jpg' }),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'card-subtitle' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'ul',
+                  null,
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    'Vin\xEDcius Arruda'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'li',
+                    null,
+                    'Desenvolvedor'
+                  )
+                )
+              )
             )
           )
         )
@@ -21889,110 +21894,7 @@ class Sobre extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 
 
 /***/ }),
-/* 43 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-
-
-class Blog extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
-  render() {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      "section",
-      { id: "blog" },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        "div",
-        { className: "container" },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "div",
-          { className: "row" },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "div",
-            { className: "col-md-12" },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "div",
-              { className: "card-blog" },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "../app/src/images/equipe/vinicius.jpg" }),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "div",
-                { className: "blog-legenda" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  "span",
-                  { className: "data" },
-                  "24.10.2017"
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  "span",
-                  { className: "titulo" },
-                  "Nova plataforma"
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  "span",
-                  { className: "descricao" },
-                  "Fiquem ligados, estamos preparando uma nova plataforma para voc\xEA!"
-                )
-              )
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "div",
-              { className: "card-blog" },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "../app/src/images/equipe/vinicius.jpg" }),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "div",
-                { className: "blog-legenda" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  "span",
-                  { className: "data" },
-                  "24.10.2017"
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  "span",
-                  { className: "titulo" },
-                  "Nova plataforma"
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  "span",
-                  { className: "descricao" },
-                  "Fiquem ligados, estamos preparando uma nova plataforma para voc\xEA!"
-                )
-              )
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "div",
-              { className: "card-blog" },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "../app/src/images/equipe/vinicius.jpg" }),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "div",
-                { className: "blog-legenda" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  "span",
-                  { className: "data" },
-                  "24.10.2017"
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  "span",
-                  { className: "titulo" },
-                  "Nova plataforma"
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  "span",
-                  { className: "descricao" },
-                  "Fiquem ligados, estamos preparando uma nova plataforma para voc\xEA!"
-                )
-              )
-            )
-          )
-        )
-      )
-    );
-  }
-}
-/* harmony export (immutable) */ __webpack_exports__["a"] = Blog;
-
-
-/***/ }),
+/* 43 */,
 /* 44 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -22002,51 +21904,621 @@ class Blog extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 
 
 class Contato extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
-  render() {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      "section",
-      { id: "contato" },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        "div",
-        { className: "container" },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "div",
-          { className: "row" },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "form",
-            { onSubmit: this.handleSubmit },
+    render() {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "section",
+            { id: "contact", className: "section" },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "label",
-              null,
-              "Nome:",
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "text", name: "name" })
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "label",
-              null,
-              "Assunto:",
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "text", name: "name" })
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "label",
-              null,
-              "E-mail:",
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "email", name: "name" })
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "label",
-              null,
-              "Mensagem:",
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "textarea", name: "name" })
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "submit", value: "Submit" })
-          )
-        )
-      )
-    );
-  }
+                "div",
+                { className: "container" },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "div",
+                    { className: "row" },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "div",
+                        { className: "col-xs-12 col-sm-12 col-md-12" },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "div",
+                            { className: "block" },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "div",
+                                { className: "heading wow fadeInUp" },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "h2",
+                                    null,
+                                    "Get In Touch"
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "p",
+                                    null,
+                                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ",
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
+                                    " dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"
+                                )
+                            )
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "div",
+                        { className: "col-xs-12 col-sm-12 col-md-5 wow fadeInUp" },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "div",
+                            { className: "block text-left" },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "div",
+                                { className: "sub-heading" },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "h4",
+                                    null,
+                                    "Contact Address"
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "p",
+                                    null,
+                                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quos maxime voluptate doloribus, voluptatum nemo vel ipsa in eligendi, ullam. Ducimus consequuntur labore error hic."
+                                )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "address",
+                                { className: "address" },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("hr", null),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "p",
+                                    null,
+                                    "Dhanmondi 32,",
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
+                                    " Dhaka,",
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
+                                    " Bangladesh"
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("hr", null),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "p",
+                                    null,
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        "strong",
+                                        null,
+                                        "E:"
+                                    ),
+                                    "\xA0hello@foundry.net",
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        "strong",
+                                        null,
+                                        "P:"
+                                    ),
+                                    "\xA0+614 3948 2726"
+                                )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "div",
+                                { className: "fb-page", "data-href": "https://www.facebook.com/uplant.investe/", "data-tabs": "timeline", "data-small-header": "false", "data-adapt-container-width": "true", "data-hide-cover": "false", "data-show-facepile": "true" },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "blockquote",
+                                    { cite: "https://www.facebook.com/uplant.investe/", className: "fb-xfbml-parse-ignore" },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        "a",
+                                        { href: "https://www.facebook.com/uplant.investe/" },
+                                        "UPlant"
+                                    )
+                                )
+                            )
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "div",
+                        { className: "col-xs-12 col-sm-12 col-md-5 col-md-offset-1 wow fadeInUp", "data-wow-delay": "0.3s" },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "div",
+                            { className: "form-group" },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "form",
+                                { action: "#", method: "post", id: "contact-form" },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "div",
+                                    { className: "input-field" },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "text", className: "form-control", placeholder: "Your Name", name: "name" })
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "div",
+                                    { className: "input-field" },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "email", className: "form-control", placeholder: "Email Address", name: "email" })
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "div",
+                                    { className: "input-field" },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("textarea", { className: "form-control", placeholder: "Your Message", rows: "3", name: "message" })
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "button",
+                                    { className: "btn btn-send", type: "submit" },
+                                    "Send me"
+                                )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "div",
+                                { id: "success" },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "p",
+                                    null,
+                                    "Your Message was sent successfully"
+                                )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "div",
+                                { id: "error" },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "p",
+                                    null,
+                                    "Your Message was not sent successfully"
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+        );
+    }
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = Contato;
+
+
+/***/ }),
+/* 45 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+
+
+class Date extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
+    render() {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "section",
+            { id: "hero-area" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "div",
+                { className: "container" },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "div",
+                    { className: "row" },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "div",
+                        { className: "col-md-6" },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "div",
+                            { className: "block" },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "h1",
+                                { className: "wow fadeInDown" },
+                                "Uma plataforma agr\xEDcula crowndfounding"
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "p",
+                                { className: "wow fadeInDown", "data-wow-delay": "0.3s" },
+                                "Ap\xF3s nossa V1 ser um sucesso, queremos surpreender a todos com a vers\xE3o final. Fiquem ligados no calend\xE1rio!"
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "div",
+                                { className: "wow fadeInDown", "data-wow-delay": "0.3s" },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "a",
+                                    { className: "btn btn-default btn-home", href: "#about", role: "button" },
+                                    "Saiba mais"
+                                )
+                            )
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "div",
+                        { className: "col-md-6 wow zoomIn" },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "div",
+                            { className: "block" },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "div",
+                                { className: "counter text-center" },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "ul",
+                                    { id: "countdown_dashboard" },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        "li",
+                                        null,
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            "div",
+                                            { className: "dash days_dash" },
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                "div",
+                                                { className: "digit" },
+                                                "0"
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                "div",
+                                                { className: "digit" },
+                                                "0"
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                "div",
+                                                { className: "digit" },
+                                                "0"
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                "span",
+                                                { className: "dash_title" },
+                                                "Dias"
+                                            )
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        "li",
+                                        null,
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            "div",
+                                            { className: "dash hours_dash" },
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                "div",
+                                                { className: "digit" },
+                                                "0"
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                "div",
+                                                { className: "digit" },
+                                                "0"
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                "span",
+                                                { className: "dash_title" },
+                                                "Horas"
+                                            )
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        "li",
+                                        null,
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            "div",
+                                            { className: "dash minutes_dash" },
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                "div",
+                                                { className: "digit" },
+                                                "0"
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                "div",
+                                                { className: "digit" },
+                                                "0"
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                "span",
+                                                { className: "dash_title" },
+                                                "Minutos"
+                                            )
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        "li",
+                                        null,
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            "div",
+                                            { className: "dash seconds_dash" },
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                "div",
+                                                { className: "digit" },
+                                                "0"
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                "div",
+                                                { className: "digit" },
+                                                "0"
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                "span",
+                                                { className: "dash_title" },
+                                                "Segundos"
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+        );
+    }
+}
+/* harmony export (immutable) */ __webpack_exports__["a"] = Date;
+
+
+/***/ }),
+/* 46 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+
+
+class Plataforma extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
+    render() {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "section",
+            { id: "service", className: "section" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "div",
+                { className: "container" },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "div",
+                    { className: "row" },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "div",
+                        { className: "heading wow fadeInUp" },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "h2",
+                            null,
+                            "Our service"
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "p",
+                            null,
+                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ",
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
+                            " dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "div",
+                        { className: "col-sm-6 col-md-3 wow fadeInLeft" },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "div",
+                            { className: "service" },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "div",
+                                { className: "icon-box" },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "span",
+                                    { className: "icon" },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("i", { className: "ion-android-desktop" })
+                                )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "div",
+                                { className: "caption" },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "h3",
+                                    null,
+                                    "Multiplataforma"
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "p",
+                                    null,
+                                    "Nosso site foi feito para se adequar para todos os dispositivos, utilizando da tecnologia Pwa, nossa plataforma \xE9 um app que n\xE3o tem a necessidade de instala\xE7\xE3o"
+                                )
+                            )
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "div",
+                        { className: "col-sm-6 col-md-3 wow fadeInLeft", "data-wow-delay": "0.3s" },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "div",
+                            { className: "service" },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "div",
+                                { className: "icon-box" },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "span",
+                                    { className: "icon" },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("i", { className: "ion-lock-combination" })
+                                )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "div",
+                                { className: "caption" },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "h3",
+                                    null,
+                                    "Seguran\xE7a"
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "p",
+                                    null,
+                                    "Invista de forma pr\xE1tica e segura. Escolha o investimento que melhor se enquadra com voc\xEA! Com nossos relat\xF3rios sobre as safras, sua escolha fica bem mais f\xE1cil."
+                                )
+                            )
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "div",
+                        { className: "col-sm-6 col-md-3 wow fadeInLeft", "data-wow-delay": "0.6s" },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "div",
+                            { className: "service" },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "div",
+                                { className: "icon-box" },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "span",
+                                    { className: "icon" },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("i", { className: "ion-arrow-graph-up-right" })
+                                )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "div",
+                                { className: "caption" },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "h3",
+                                    null,
+                                    "Aumente seu capital"
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "p",
+                                    null,
+                                    "Junte-se com outros investidores para conseguir alcan\xE7ar a meta."
+                                )
+                            )
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "div",
+                        { className: "col-sm-6 col-md-3 wow fadeInLeft", "data-wow-delay": "0.9s" },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "div",
+                            { className: "service" },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "div",
+                                { className: "icon-box" },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "span",
+                                    { className: "icon" },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("i", { className: "ion-earth" })
+                                )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "div",
+                                { className: "caption" },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "h3",
+                                    null,
+                                    "Crowdfounding"
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "p",
+                                    null,
+                                    "Crownfunding ou investimento coletivo, \xE9 uma forma de arrecada\xE7\xE3o de dinheiro, atrav\xE9s da internet, para projetos de todo o tipo, seja ele: pequenos neg\xF3cios, inven\xE7\xF5es, ONGs, filantropia, entre outros."
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+        );
+    }
+}
+/* harmony export (immutable) */ __webpack_exports__["a"] = Plataforma;
+
+
+/***/ }),
+/* 47 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+
+
+class Newsletter extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
+    render() {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "section",
+            { id: "call-to-action", className: "section" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "div",
+                { className: "container" },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "div",
+                    { className: "row" },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "div",
+                        { className: "col-md-12 wow text-center" },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "div",
+                            { className: "block" },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "h2",
+                                null,
+                                "Quer receber as novidades antes de todo mundo?"
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "p",
+                                null,
+                                "Inscreva seu e-mail para receber Newsletter Informativas sobre n\xF3s"
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "div",
+                                { className: "form-group" },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "text", className: "form-control", placeholder: "Digite seu e-mail" }),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "button",
+                                    { className: "btn btn-default btn-submit", type: "submit" },
+                                    "Inscrever"
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+        );
+    }
+}
+/* harmony export (immutable) */ __webpack_exports__["a"] = Newsletter;
+
+
+/***/ }),
+/* 48 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+
+
+class Plataforma extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
+    render() {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "footer",
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "div",
+                { className: "container" },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "div",
+                    { className: "row" },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "div",
+                        { className: "col-md-12" },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "div",
+                            { className: "block" },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "p",
+                                null,
+                                "Copyright \xA9 ",
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "a",
+                                    { href: "https://www.uplant.com.br" },
+                                    "Uplant"
+                                ),
+                                "2017 | All right reserved."
+                            )
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "div",
+                            { className: "social-footer" },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "a",
+                                { href: "", target: "_blank" },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("i", { className: "fa fa-facebook" })
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "a",
+                                { href: "", target: "_blank" },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("i", { className: "fa fa-linkedin" })
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "a",
+                                { href: "", target: "_blank" },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("i", { className: "fa fa-youtube" })
+                            )
+                        )
+                    )
+                )
+            )
+        );
+    }
+}
+/* harmony export (immutable) */ __webpack_exports__["a"] = Plataforma;
 
 
 /***/ })
